@@ -1,0 +1,66 @@
+.fixed-amount-options {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.request-card-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pledge-status {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #fff3d6;
+  color: #70520b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.request-donate:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.goods-request-items {
+  display: grid;
+  gap: 12px;
+}
+
+.goods-request-items > .form-row {
+  align-items: end;
+}
+
+.pledge-panel {
+  display: grid;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid #dce4dc;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.pledge-panel h2,
+.pledge-panel p {
+  margin: 0;
+}
+
+.pledge-panel .btn {
+  justify-self: start;
+}
+
+.admin-role-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 16px 0 24px;
+  color: #627168;
+  font-size: 13px;
+}
+
+@media (max-width: 420px) {
+  .fixed-amount-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
